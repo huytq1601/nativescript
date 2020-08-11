@@ -1,0 +1,11 @@
+<!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->
+<FlexboxLayout [paddingTop]="getStatusBarHeight()" flexDirection="column">
+  <ns-challenge-edit (input)="onChallengeInput($event)"></ns-challenge-edit>
+  <ns-current-challenge [challenges]="activeChallenges"></ns-current-challenge>
+</FlexboxLayout>
+
+<!-- <StackLayout [paddingTop]="getStatusBarHeight()">
+  <ns-flex></ns-flex>
+  <ns-grid></ns-grid>
+  <ns-absolute></ns-absolute>
+</StackLayout> -->
